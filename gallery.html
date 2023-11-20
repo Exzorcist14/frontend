@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Компьютерные комплектующие</title>
+    <link rel="icon" type="image/png" href="img/logo/ComputerFavicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/grid_main.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body class="grid_container_main">
+    <div class="it-header">
+        <header>
+            <div class="logo">
+                <img src="img/logo/ComputerLogo.png" alt="Логотип сайта" width="50" height="50">
+                <h1 id="Topic1" align="left">  <b>Компьютерные комплектующие</b> </h1>
+            </div>
+    
+            <div class="head">
+                <input type="checkbox" id="notifications-list" class = toggle>
+                <label for="notifications-list" class="notifications">
+                    <img src="img/auxiliary/NotificationsLogo.png" width="50" height="50">
+                </label>
+    
+                <div class="notifications-list">
+                    <div class="notifications-item">
+                        <p class="notifications-number">1</p>
+                        <p>Внимание! С 9:00 до 10:30 20.10.2023 ожидаются технические шоколадки. Приносим извинения за возможные неудобства.</p>
+                    </div>
+                    <div class="notifications-item">
+                        <p class="notifications-number">2</p>
+                        <p>Точно-точно!</p>
+                    </div>
+                    <div class="notifications-item">
+                        <p class="notifications-number">3</p>
+                        <p>Шоколадки, правда...</p>
+                    </div>
+                </div>
+    
+                <input type="checkbox" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                <nav>
+                    <a href="index.html" class="mainPage">Главная страница</a>
+                    <a href="GPU.html" class="gpu">Видеокарты</a>
+                    <a href="CPU.html" class="cpu">Процессоры</a>
+                    <a href="gallery.html" class="galleryNav">Галерея</a>
+                    <a href="registerMenu.html" class="register">Регистрация</a>
+                    <a href="cart.html">Корзина</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <div class="it-main">
+        <main>
+            <section>
+                <div class="gal">
+                    <div class="about_card_holder_1">
+                            <img src="img/gallery/AMD.jpg">
+                        <div class="bl_1"><p>AMD</p></div>
+                    </div>
+        
+                    <div class="about_card_holder_2">
+                        <img src="img/gallery/RTX.jpg">
+                        <div class="bl_1"><p>RTX</p></div>
+                    </div>
+        
+                    <div class="about_card_holder_3">
+                        <img src="img/gallery/INTEL.png">
+                        <div class="bl_1"><p>Intel</p></div>
+                    </div>
+        
+                    <div class="about_card_holder_4">
+                        <img src="img/gallery/PC1.jpg">
+                        <div class="bl_1"><p>Компик номер 1</p></div>
+                    </div>
+                    <div class="about_card_holder_5">
+                        <img src="img/gallery/PC2.jpg">
+                        <div class="bl_1"><p>Компик номер 2</p></div>
+                    </div>
+                </div>
+            </section> 
+
+            <section>
+                <div class="content_grid_form">
+                    <div class="item_2">
+                        <div class="title_form">
+                            <div>Обратная связь</div>
+                        </div>
+                    </div>
+                    <div class="item_1">
+                        <div class="inputbox">
+                            <input required="required" type="text">
+                            <span>Имя</span>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="item_1">
+                        <div class="inputbox">
+                            <input required="required" type="text">
+                            <span>Фамилия</span>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="item_1">
+                        <div class="inputbox">
+                            <input required="required" type="tel">
+                            <span>Номер телефона</span>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="item_1">
+                        <div class="inputbox">
+                            <input required="required" type="email">
+                            <span>Электронная почта</span>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="item_2">
+                        <div class="inputbox">
+                            <input required="required" type="text">
+                            <span>Текст сообщения</span>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="inputbox">
+                        <button class="btn_submit">Отправить</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="it-sidebar">
+        <sidebar>
+            <article>
+            </article>
+        </sidebar>
+    </div>
+    
+    <div class="it-aside">
+        <aside>
+        </aside>
+    </div>
+
+    <div class="it-footer">
+        <footer class="main-footer">
+            <div class="content_grid_footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <h2>О нас</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui vel elementum
+                            viverra. Suspendisse maximus nisi nulla, sed luctus lorem pellentesque et.
+                        </p>
+                        <ul class="container_for_icons">
+                            <li><a href="https://www.youtube.com/watch?v=l6FBlQ29UG0"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://web.telegram.org/k/"><i class="fa fa-paper-plane"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h2>Навигация</h2>
+                        <ul>
+                            <li><a href="#">Описание</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec contact">
+                        <h2>Обратная связь</h2>
+                        <ul class="info">
+                            <li>
+                                <span><i class="fa fa-map-marker"></i></span>
+                                Вернадского 86с1
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone"></i></span>
+                                <a href="#">+7 908 324 14 74</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <a href="#">vladimir_namestnikov@vk.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyrightText">
+            Copyright © 2022 Сomputer accessories. All right Reserved.
+        </div>
+    </div>
+
+</body>
+</html>

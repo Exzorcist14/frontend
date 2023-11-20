@@ -1,0 +1,115 @@
+.inputbox {
+    position: relative;
+    width: 90%;
+    height: 95px;
+}
+
+.inputbox input {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputbox span {
+    position: absolute;
+    top: 50px;
+    left: 5%;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+    color: #45f3ff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+    height: 44px;
+}
+
+.content_grid_form {
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.item_2 {
+    grid-column: span 2;
+}
+
+.item_2 input,
+.item_2 span,
+.item_2 i {
+    left: 2.5%;
+}
+.item_2 .inputbox {
+    width: 95%;
+}
+
+.inputbox .btn_submit {
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    width: 100px;
+    height: 45px;
+    background: #45f3ff;
+    color: #23242a;
+    font-size: 16px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.inputbox .btn_submit:hover {
+    background: #94eef3;
+}
+
+.title_form {
+    color: #45f3ff;
+    font-size: 36px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .content_grid_form {
+        grid-template-columns: 1fr;
+    }
+    .item_2 {
+        grid-column: span 1;
+    }
+}
+

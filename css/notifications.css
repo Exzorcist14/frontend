@@ -1,0 +1,95 @@
+.notifications {
+    padding: 5px;
+    background-color: rgb(76, 76, 76);
+    border-radius: 50%;
+    transition: 0.4s;
+
+    position: relative;
+}
+
+.notifications::before {
+    content: "3";
+
+    position: absolute;
+    top: -5px;  
+    right: -5px;
+    background-color: rgb(44, 44, 44);
+
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 3px black;
+    border-radius: 50%; /* Задаем радиус, чтобы создать круглый контейнер */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications:hover{
+    background-color: rgb(103, 103, 103);
+}
+
+.notifications-list {
+    display: none;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle:checked ~ .notifications-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+        
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    
+    gap: 10px;
+    position: absolute;
+    top: 100px;
+    width: 30vw;
+    box-shadow: 0 0 14px #030303;
+    background-color: #7c7c7c;
+    text-align: left;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.toggle:checked ~ .notifications::before {
+    visibility: hidden;
+}
+
+.notifications-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding-left: 7px;
+    transition: all 0.5s;
+}
+
+.notifications-item:hover {
+    background-color: rgb(103, 103, 103);
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.notifications-number {
+    flex-shrink: 0;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 840px) {
+    .toggle:checked ~ .notifications-list {
+        right: 0;
+        width: 300px;
+    }
+}

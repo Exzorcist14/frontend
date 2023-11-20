@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <title>Компьютерные комплектующие</title>
+    <link rel="icon" type="image/png" href="img/logo/ComputerFavicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/grid_main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/1.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="js/loginScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo/ComputerLogo.png" alt="Логотип сайта" width="50" height="50">
+            <h1 id="Topic1" align="left">  <b>Компьютерные комплектующие</b> </h1>
+        </div>
+
+        <div class="head">
+            <div class="notifications">
+                <img src="img/auxiliary/NotificationsLogo.png" width="50" height="50">
+            </div>
+
+            <input type="checkbox" id="checkbox_toggle">
+            <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+            <nav>
+                <a href="index.html" class="mainPage">Главная страница</a>
+                <a href="GPU.html" class="gpu">Видеокарты</a>
+                <a href="CPU.html" class="cpu">Процессоры</a>
+                <a href="gallery.html" class="galleryNav">Галерея</a>
+                <a href="registerMenu.html" class="register">Регистрация</a>
+                <a href="cart.html">Корзина</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend><h2>Регистрация</h2></legend>
+
+                    <label for="name">Введите имя:</label>
+                    <input type="text" name="name" id="name" placeholder="Драконорождённый" pattern="[А-Яа-яЁё]*" required>
+
+                    <p>
+                        <label for="tel" >Введите номер телефона:</label>
+                        <input type="tel" placeholder="+7 (908) 324-14-74"  name="tel" id="tel" required>
+                    <p>
+
+                    <p>
+                        <label for="email">Введите почту:</label>
+                        <input type="email" name="email" id="email" required>
+                    </p>
+
+                    <p>
+                        <label for="password">Введите пароль:</label>
+                        <input type="password" name="password" id="password" required>
+                    </p>
+
+                    <p>
+                        <label for="file">Загрузите ваш аватар:</label>
+                        <input type="file" name="file" id="file">
+                    </p>
+
+                    <p>
+                        Ваш пол:
+                        <input type="radio" name="radio" id="radio1" required>
+                        <label for="radio1">Мужской</label>
+
+                        <input type="radio" name="radio" id="radio2" required>
+                        <label for="radio2">Женский</label>
+
+                        <input type="radio" name="radio" id="radio3" checked required>
+                        <label for="radio3">Бог не одобряет третий выбор</label>
+                    </p>
+
+                    <p>
+                        В какие из этих игр вы играли:
+                        <input type="checkbox" name="checkbox" id="checkbox1">
+                        <label for="checkbox1">Minecraft</label>
+
+                        <input type="checkbox" name="checkbox" id="checkbox2">
+                        <label for="checkbox2">Skyrim</label>
+
+                        <input type="checkbox" name="checkbox" id="checkbox3">
+                        <label for="checkbox3">Cyberpunk 2077</label>
+
+                        <input type="checkbox" name="checkbox" id="checkbox4">
+                        <label for="checkbox4">Call of Duty: Warzone</label>
+                    </p>
+
+                    <label for="datetime-local">Дата Рождения </label>
+                    <input type="datetime-local" name="datetime-local" id="datetime-local" min="1990-01-01T08:30"
+                           max="2005-01-01T08:31">
+
+                    <p>
+                        <label for="city-select">Ваш город</label>
+                        <select name="city" id="city-select" multiple size="2" required>
+                            <option value="">---Выберите город---</option>
+                            <option value="Moscow">Москва</option>
+                            <option value="Самара">Самара</option>
+                            <option value="Оренбург">Оренбург</option>
+                            <option value="Buzuluk">Бузулук</option>
+                        </select>
+                    </p>
+
+                    <label for="about">Расскажите о себе</label><br>
+                    <textarea id="about" name="about" rows="7" cols="35" minlength="5" maxlength="100"
+                              placeholder="Я умный, красивый, а главное не играю в DOTA 2" required> </textarea>
+
+                    <p>
+                        <input type="submit" name="submit" onclick="checkRegistration()" required>
+                        <input type="reset" name="reset" required>
+                    </p>
+
+                    <button autofocus>Ни в коем случае не нажимай сюда</button>
+                </fieldset>
+            </form>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20953.806846049476!2d37.468008142589355!3d55.65897441803026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54dc1d23b51c3%3A0x74763ed59c81ccb6!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1695929989075!5m2!1sru!2sru" width="1150" height="450"></iframe>
+        </section>
+    </main>
+
+    <div class="it-footer">
+        <footer class="main-footer">
+            <div class="content_grid_footer">
+                <div class="container">
+                    <div class="sec aboutus">
+                        <h2>О нас</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit dui vel elementum
+                            viverra. Suspendisse maximus nisi nulla, sed luctus lorem pellentesque et.
+                        </p>
+                        <ul class="container_for_icons">
+                            <li><a href="https://www.youtube.com/watch?v=l6FBlQ29UG0"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://web.telegram.org/k/"><i class="fa fa-paper-plane"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="sec quicklinks">
+                        <h2>Навигация</h2>
+                        <ul>
+                            <li><a href="#">Описание</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="sec contact">
+                        <h2>Обратная связь</h2>
+                        <ul class="info">
+                            <li>
+                                <span><i class="fa fa-map-marker"></i></span>
+                                Вернадского 86с1
+                            </li>
+                            <li>
+                                <span><i class="fa fa-phone"></i></span>
+                                <a href="#">+7 908 324 14 74</a>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <a href="#">vladimir_namestnikov@vk.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyrightText">
+            Copyright © 2022 Сomputer accessories. All right Reserved.
+        </div>
+    </div>
+
+</body>
+</html>

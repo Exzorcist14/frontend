@@ -1,0 +1,32 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery_img {
+    flex: 1 1 25%;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.gallery_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 1000px)  {
+    .gallery_img  {
+        flex: 1 1 33%
+    }
+}
+
+@media screen and (max-width: 600px)  {
+    .gallery_img  {
+        flex: 1 1 100%
+    }
+}

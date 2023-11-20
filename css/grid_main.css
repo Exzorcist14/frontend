@@ -1,0 +1,117 @@
+:root {
+    --body-color: #4b4b4b;
+    --header-сolor: #333;
+    --section-color: #606060;
+    --footer-color: #1e1e1e;
+    --hover-color: #555; 
+}
+
+.grid_container_main {
+    display: grid;
+    grid-template-columns: 1fr 9fr 2fr;
+    grid-template-areas:
+    "h h h"
+    "as m sa"
+    "f f f";
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+}
+
+.it-header {
+    grid-area: h;
+}
+
+.it-main {
+    grid-area: m;
+}
+
+.it-aside {
+    grid-area: as;
+    background-color: var(--section-color);
+    border-radius: 0 15px 15px 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.it-sidebar {
+    grid-area: sa;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--section-color);
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.it-footer {
+    grid-area: f;
+}
+
+.block_1 {
+    background-color: #3d8388;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid_container_main {
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas:
+        "h h"
+        "sa m"
+        "as f"
+    }
+
+    section {
+        border-radius: 15px 0 0 15px;
+    }
+    
+    .it-sidebar {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .it-aside {
+        border-radius: 0 15px 0 0;
+        background-color: var(--footer-color);
+        margin-bottom: 0;
+    }
+
+    .main-footer {
+        margin-top: 7px;
+        border-radius: 10px 0 0 0;
+        padding-right: 3%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid_container_main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "sa"
+        "m"
+        "as"
+        "f"
+    }
+
+    section {
+        border-radius: 15px;
+    }
+    
+    .it-sidebar {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 15px;
+    }
+
+    .it-aside {
+        border-radius: 15px;
+        background-color: var(--section-color);
+    }
+
+    .mainFooter {
+        border-radius: 0;
+        padding-right: 5%;
+    }
+}
